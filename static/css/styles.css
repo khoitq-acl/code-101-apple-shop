@@ -3,7 +3,7 @@
   main-text-color: #1d1d1f
   card-background: #FFFFFF
   primary-color: #fca074
-  max-content-size: 980px
+  max-content-size: 1000px
 
 */
 
@@ -11,11 +11,15 @@ body {
   background-color: #f5f5f7;
 }
 
+* {
+  color: #1d1d1f;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 980px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -31,7 +35,39 @@ body {
   display: flex;
 }
 
-.menu li{
-  list-style: none;
+.menu a {
   margin-left: 16px;
+  text-decoration: none;
+}
+
+.title {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.items {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.item {
+  width: 240px;
+  background: #ffffff;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding: 12px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.item .thumpnail {
+  width: 200px;
 }
